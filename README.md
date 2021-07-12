@@ -30,9 +30,9 @@ to the "out" terminal and on to the TRFC.Z_ASYNCBAPI_1.INBOUND.OUT node.
 
 ![Message flow picture](images/SAP-flow.png)
 
-While the flow appears simple, it is complicated to test without using the ACE v12 test support code, and
-the orignal test flows on which this application is based used an actual SAP system to provide input to
-the SAP Input node.
+While the flow appears simple, it is complicated to test without using the ACE v12 test support code. The 
+original test flows, on which this application is based, used an actual SAP system to provide input to the 
+SAP Input node.
 
 ## Messages used in the tests
 
