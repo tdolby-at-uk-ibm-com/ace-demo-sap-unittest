@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>SAPApplication_IntegrationTest</name>
+	<name>SAPApplication_UnitTest</name>
 	<comment></comment>
 	<projects>
 		<project>SAPApplication</project>
