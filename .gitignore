@@ -9,3 +9,15 @@
 
 # Undo-tree save-files
 *.~undo-tree
+
+# ACE v11
+*.bar
+*.class
+
+TeaSharedLibrary/TeaSharedLibraryJava.jar
+**/maven-status/*
+**/maven-archiver/*
+**/*-maven.jar
+
+# This shouldn't be needed!
+SAPApplication_UnitTest/resources
