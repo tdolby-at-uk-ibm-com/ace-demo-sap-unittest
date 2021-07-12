@@ -12,27 +12,27 @@
   <dependencies>
     <!-- LOCAL DEPENDENCY -->
     <dependency>
-      <groupId>ACEv11</groupId><artifactId>IntegrationAPI</artifactId><version>11.0.0</version><scope>system</scope>
+      <groupId>ACEv12</groupId><artifactId>IntegrationAPI</artifactId><version>12.0.1</version><scope>system</scope>
       <systemPath>${MQSI_BASE_FILEPATH}/common/classes/IntegrationAPI.jar</systemPath>
     </dependency>
     <dependency>
-      <groupId>ACEv11</groupId><artifactId>jackson-core</artifactId><version>11.0.0</version><scope>system</scope>
+      <groupId>ACEv12</groupId><artifactId>jackson-core</artifactId><version>12.0.1</version><scope>system</scope>
       <systemPath>${MQSI_BASE_FILEPATH}/common/jackson/lib/jackson-core-2.12.3.jar</systemPath>
     </dependency>
     <dependency>
-      <groupId>ACEv11</groupId><artifactId>jackson-databind</artifactId><version>11.0.0</version><scope>system</scope>
+      <groupId>ACEv12</groupId><artifactId>jackson-databind</artifactId><version>12.0.1</version><scope>system</scope>
       <systemPath>${MQSI_BASE_FILEPATH}/common/jackson/lib/jackson-databind-2.12.3.jar</systemPath>
     </dependency>
     <dependency>
-      <groupId>ACEv11</groupId><artifactId>javacompute</artifactId><version>11.0.0</version><scope>system</scope>
+      <groupId>ACEv12</groupId><artifactId>javacompute</artifactId><version>12.0.1</version><scope>system</scope>
       <systemPath>${MQSI_BASE_FILEPATH}/server/classes/javacompute.jar</systemPath>
     </dependency>
     <dependency>
-      <groupId>ACEv11</groupId><artifactId>jplugin2</artifactId><version>11.0.0</version><scope>system</scope>
+      <groupId>ACEv12</groupId><artifactId>jplugin2</artifactId><version>12.0.1</version><scope>system</scope>
       <systemPath>${MQSI_BASE_FILEPATH}/server/classes/jplugin2.jar</systemPath>
     </dependency>
     <dependency>
-      <groupId>ACEv11</groupId><artifactId>bipbroker</artifactId><version>11.0.0</version><scope>system</scope>
+      <groupId>ACEv12</groupId><artifactId>bipbroker</artifactId><version>12.0.1</version><scope>system</scope>
       <systemPath>${MQSI_BASE_FILEPATH}/server/classes/bipbroker.jar</systemPath>
     </dependency>
     <dependency>
@@ -124,7 +124,7 @@
 		<argument>-w</argument>
 		<argument>..</argument>
 		<argument>-a</argument>
-		<argument>tea-unit-tests.bar</argument>
+		<argument>SAPApplication-unit-tests.bar</argument>
 		<argument>-t</argument>
 		<argument>SAPApplication_UnitTest</argument>
 	      </arguments>
@@ -134,11 +134,21 @@
 	    <phase>pre-integration-test</phase>
 	    <goals><goal>exec</goal></goals>
 	    <configuration>
-	      <executable>../scripts/create-and-populate-work-dir.sh</executable>
+	      <executable>mqsicreateworkdir</executable>
+	      <arguments><argument>/tmp/mvn-test-work-dir</argument></arguments>
+	    </configuration>
+	  </execution>
+	  <execution><id>unpack-application</id>
+	    <phase>pre-integration-test</phase>
+	    <goals><goal>exec</goal></goals>
+	    <configuration>
+	      <executable>mqsibar</executable>
 	      <arguments>
+		<argument>-c</argument>
+		<argument>-w</argument>
 		<argument>/tmp/mvn-test-work-dir</argument>
-		<argument>../TeaSharedLibrary/tea-shlib.bar</argument>
-		<argument>../SAPApplication/tea.bar</argument>
+		<argument>-a</argument>
+		<argument>../SAPApplication/SAPApplication.bar</argument>
 	      </arguments>
 	    </configuration>
 	  </execution>
@@ -152,7 +162,7 @@
 		<argument>-w</argument>
 		<argument>/tmp/mvn-test-work-dir</argument>
 		<argument>-a</argument>
-		<argument>tea-unit-tests.bar</argument>
+		<argument>SAPApplication-unit-tests.bar</argument>
 	      </arguments>
 	    </configuration>
 	  </execution>
@@ -164,6 +174,10 @@
 	      <arguments>
 		<argument>-w</argument>
 		<argument>/tmp/mvn-test-work-dir</argument>
+		<argument>--mq-queue-manager-name</argument>
+		<argument>dummy</argument>
+		<argument>--start-msgflows</argument>
+		<argument>false</argument>
 		<argument>--no-nodejs</argument>
 		<argument>--admin-rest-api</argument>
 		<argument>-1</argument>
@@ -176,39 +190,13 @@
       </plugin>
       <!-- Not strictly necessary, but eliminates log spam and empty JAR files -->
       <plugin>
-	<artifactId>maven-resources-plugin</artifactId>
-	<version>[0.0,)</version>
-	<executions>
-	  <execution>
-	    <id>default-resources</id>
-	    <phase>none</phase>
-	  </execution>
-	  <execution>
-	    <id>default-testResources</id>
-	    <phase>none</phase>
-	  </execution>
-	</executions>
+	<artifactId>maven-resources-plugin</artifactId><version>[0.0,)</version>
+	<executions><execution><id>default-resources</id><phase>none</phase></execution>
+	  <execution><id>default-testResources</id><phase>none</phase></execution></executions>
       </plugin>
       <plugin>
-	<artifactId>maven-surefire-plugin</artifactId>
-	<version>[0.0,)</version>
-	<executions>
-	  <execution>
-	    <id>default-test</id>
-	    <phase>none</phase>
-	  </execution>
-	</executions>
-      </plugin>
-      <!-- Disable standard install phase: we'll call mqsibar from demo-infrastructure instead -->
-      <plugin>
-	<artifactId>maven-install-plugin</artifactId>
-	<version>2.5.2</version>
-	<executions>
-	  <execution>
-	    <id>default-install</id>
-	    <phase>none</phase>
-	  </execution>
-	</executions>
+	<artifactId>maven-surefire-plugin</artifactId><version>[0.0,)</version>
+	<executions><execution><id>default-test</id><phase>none</phase></execution></executions>
       </plugin>
     </plugins>
     <pluginManagement>

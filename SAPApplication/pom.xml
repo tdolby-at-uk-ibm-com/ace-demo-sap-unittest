@@ -14,23 +14,15 @@
     <plugins>
       <plugin>
 	<groupId>org.codehaus.mojo</groupId><artifactId>exec-maven-plugin</artifactId><version>3.0.0</version>
-	<executions>
-	  <execution>
-	    <phase>compile</phase>
-	    <goals><goal>exec</goal></goals>
-	  </execution>
-	</executions>
+	<executions><execution><phase>compile</phase><goals><goal>exec</goal></goals></execution></executions>
 	<configuration>
+          <!-- mqsipackagebar will pick up the message sets automatically -->
 	  <executable>mqsipackagebar</executable>
 	  <arguments>
 	    <argument>-w</argument>
 	    <argument>..</argument>
 	    <argument>-a</argument>
-	    <argument>tea.bar</argument>
-	    <!-- could compile maps here 
-	    <argument>-i</argument>
-	    <argument>-c</argument>
-	    -->
+	    <argument>SAPApplication.bar</argument>
 	    <argument>-k</argument>
 	    <argument>SAPApplication</argument>
 	  </arguments>
@@ -38,65 +30,23 @@
       </plugin>
       <!-- Not strictly necessary, but eliminates log spam and empty JAR files -->
       <plugin>
-	<artifactId>maven-jar-plugin</artifactId>
-	<version>[0.0,)</version>
-	<executions>
-	  <execution>
-	    <id>default-jar</id>
-	    <phase>none</phase>
-	  </execution>
-	</executions>
+	<artifactId>maven-jar-plugin</artifactId><version>[0.0,)</version>
+	<executions><execution><id>default-jar</id><phase>none</phase></execution></executions>
       </plugin>
       <plugin>
-	<artifactId>maven-compiler-plugin</artifactId>
-	<version>[0.0,)</version>
-	<executions>
-	  <execution>
-	    <id>default-compile</id>
-	    <phase>none</phase>
-	  </execution>
-	  <execution>
-	    <id>default-testCompile</id>
-	    <phase>none</phase>
-	  </execution>
-	</executions>
+	<artifactId>maven-compiler-plugin</artifactId><version>[0.0,)</version>
+	<executions><execution><id>default-compile</id><phase>none</phase></execution><execution>
+	<id>default-testCompile</id><phase>none</phase></execution></executions>
       </plugin>
       <plugin>
-	<artifactId>maven-resources-plugin</artifactId>
-	<version>[0.0,)</version>
-	<executions>
-	  <execution>
-	    <id>default-resources</id>
-	    <phase>none</phase>
-	  </execution>
-	  <execution>
-	    <id>default-testResources</id>
-	    <phase>none</phase>
-	  </execution>
-	</executions>
+	<artifactId>maven-resources-plugin</artifactId><version>[0.0,)</version>
+	<executions><execution><id>default-resources</id><phase>none</phase></execution>
+	  <execution><id>default-testResources</id><phase>none</phase></execution></executions>
       </plugin>
       <plugin>
-	<artifactId>maven-surefire-plugin</artifactId>
-	<version>[0.0,)</version>
-	<executions>
-	  <execution>
-	    <id>default-test</id>
-	    <phase>none</phase>
-	  </execution>
-	</executions>
+	<artifactId>maven-surefire-plugin</artifactId><version>[0.0,)</version>
+	<executions><execution><id>default-test</id><phase>none</phase></execution></executions>
       </plugin>
-      <!-- Disable standard install phase: we'll call mqsibar from demo-infrastructure instead -->
-      <plugin>
-	<artifactId>maven-install-plugin</artifactId>
-	<version>2.5.2</version>
-	<executions>
-	  <execution>
-	    <id>default-install</id>
-	    <phase>none</phase>
-	  </execution>
-	</executions>
-      </plugin>
-    </plugins>
     <pluginManagement>
     	<plugins>
     		<!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
