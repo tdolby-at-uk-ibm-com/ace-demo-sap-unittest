@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata" xmlns:sapcustomeraddress="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/sapcustomeraddress" targetNamespace="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/sapcustomeraddress">
+<import namespace="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata"/>
+
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/j2ca/versionCompatability">
+<info:resourceAdapter xmlns:info="http://www.ibm.com/xmlns/prod/j2ca/versionCompatability" version="6.1"/>
+</appinfo>
+</annotation>
+
+<annotation xml:space="preserve">
+<appinfo source="commonj.connector.asi">
+<asi:annotationSet xmlns:asi="commonj.connector.asi" asiNSURI="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata"/>
+</appinfo>
+</annotation>
+<complexType name="SapCustomeraddress">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIBusinessObjectTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+</sapasi:sapBAPIBusinessObjectTypeMetadata>
+</appinfo>
+</annotation>
+<sequence maxOccurs="1" minOccurs="1">
+<element maxOccurs="1" minOccurs="0" name="CustomerNumber1" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>CUSTOMER</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>true</sapasi:PrimaryKey>
+<sapasi:ParameterType>IN</sapasi:ParameterType>
+<sapasi:MaxLength>10</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="10"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="Name1" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>NAME</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>IN</sapasi:ParameterType>
+<sapasi:MaxLength>35</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="35"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="Name2" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>NAME_2</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>IN</sapasi:ParameterType>
+<sapasi:MaxLength>35</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="35"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="Name3" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>NAME_3</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>IN</sapasi:ParameterType>
+<sapasi:MaxLength>35</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="35"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="Name4" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>NAME_4</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>IN</sapasi:ParameterType>
+<sapasi:MaxLength>35</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="35"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="City" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>CITY</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>IN</sapasi:ParameterType>
+<sapasi:MaxLength>35</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="35"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="District" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>DISTRICT</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>IN</sapasi:ParameterType>
+<sapasi:MaxLength>35</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="35"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="PoBox" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>PO_BOX</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>IN</sapasi:ParameterType>
+<sapasi:MaxLength>10</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="10"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="POBoxPostalCode" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>POBX_PCD</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>IN</sapasi:ParameterType>
+<sapasi:MaxLength>10</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="10"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="PostalCode" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>POSTL_CODE</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>IN</sapasi:ParameterType>
+<sapasi:MaxLength>10</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="10"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="RegionStateProvinceCounty" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>REGION</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>IN</sapasi:ParameterType>
+<sapasi:MaxLength>3</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="3"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="CountyCode" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>COUNTYCODE</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>IN</sapasi:ParameterType>
+<sapasi:MaxLength>3</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="3"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="CityCode" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>CITY_CODE</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>IN</sapasi:ParameterType>
+<sapasi:MaxLength>4</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="4"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="HouseNumberAndStreet" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>STREET</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>IN</sapasi:ParameterType>
+<sapasi:MaxLength>35</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="35"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="FirstTelephoneNumber" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>TELEPHONE</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>IN</sapasi:ParameterType>
+<sapasi:MaxLength>16</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="16"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="CountryKey" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>COUNTRY</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>IN</sapasi:ParameterType>
+<sapasi:MaxLength>3</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="3"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="CountryIsoCode" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>COUNTRYISO</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>IN</sapasi:ParameterType>
+<sapasi:MaxLength>2</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="2"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="PoBoxCity" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>POBX_CTY</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>IN</sapasi:ParameterType>
+<sapasi:MaxLength>35</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="35"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="LanguageKey" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>LANGU</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>IN</sapasi:ParameterType>
+<sapasi:MaxLength>2</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="2"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="LanguageAccordingToIso639" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>LANGU_ISO</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>IN</sapasi:ParameterType>
+<sapasi:MaxLength>2</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="2"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="SortField" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>SORT_FLD</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>IN</sapasi:ParameterType>
+<sapasi:MaxLength>10</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="10"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="SearchTermForMatchcodeSearch" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>MATCHCODE1</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>IN</sapasi:ParameterType>
+<sapasi:MaxLength>25</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="25"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="SearchTermForMatchcodeSearch1941080736" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>MATCHCODE2</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>IN</sapasi:ParameterType>
+<sapasi:MaxLength>25</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="25"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="SearchTermForMatchcodeSearch1941080735" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>MATCHCODE3</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>IN</sapasi:ParameterType>
+<sapasi:MaxLength>25</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="25"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="Title" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>FORMOFADDR</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>IN</sapasi:ParameterType>
+<sapasi:MaxLength>15</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="15"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="TeleboxNumber" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>TELEBOX</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>IN</sapasi:ParameterType>
+<sapasi:MaxLength>15</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="15"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="SecondTelephoneNumber" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>TELEPHONE2</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>IN</sapasi:ParameterType>
+<sapasi:MaxLength>16</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="16"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="TeletexNumber" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>TELETEX</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>IN</sapasi:ParameterType>
+<sapasi:MaxLength>30</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="30"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="TelexNumber" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>TELEX</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>IN</sapasi:ParameterType>
+<sapasi:MaxLength>30</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="30"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="TransportationZoneToOrFromWhichTheGoodsAreDelivered" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>TRANSPZONE</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>IN</sapasi:ParameterType>
+<sapasi:MaxLength>10</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="10"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="NielsenId" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>NIELSEN_ID</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>IN</sapasi:ParameterType>
+<sapasi:MaxLength>2</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="2"/>
+</restriction>
+</simpleType>
+</element>
+</sequence>
+</complexType>
+</schema>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata" xmlns:sapcustomerbankdetail="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/sapcustomerbankdetail" targetNamespace="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/sapcustomerbankdetail">
+<import namespace="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata"/>
+
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/j2ca/versionCompatability">
+<info:resourceAdapter xmlns:info="http://www.ibm.com/xmlns/prod/j2ca/versionCompatability" version="6.1"/>
+</appinfo>
+</annotation>
+
+<annotation xml:space="preserve">
+<appinfo source="commonj.connector.asi">
+<asi:annotationSet xmlns:asi="commonj.connector.asi" asiNSURI="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata"/>
+</appinfo>
+</annotation>
+<complexType name="SapCustomerbankdetail">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIBusinessObjectTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+</sapasi:sapBAPIBusinessObjectTypeMetadata>
+</appinfo>
+</annotation>
+<sequence maxOccurs="1" minOccurs="1">
+<element maxOccurs="1" minOccurs="0" name="CustomerNumber1" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>CUSTOMER</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>true</sapasi:PrimaryKey>
+<sapasi:ParameterType>INOUT</sapasi:ParameterType>
+<sapasi:MaxLength>10</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="10"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="BankCountryKey" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>BANK_CTRY</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>INOUT</sapasi:ParameterType>
+<sapasi:MaxLength>3</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="3"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="BankKeys" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>BANK_KEY</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>INOUT</sapasi:ParameterType>
+<sapasi:MaxLength>15</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="15"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="BankAccountNumber" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>BANK_ACCT</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>INOUT</sapasi:ParameterType>
+<sapasi:MaxLength>18</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="18"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="BankControlKey" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>CTRL_KEY</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>INOUT</sapasi:ParameterType>
+<sapasi:MaxLength>2</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="2"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="PartnerBankType" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>PARTNER_BK</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>INOUT</sapasi:ParameterType>
+<sapasi:MaxLength>4</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="4"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="IndicatorIsThereCollectionAuthorization" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>COLL_AUTH</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>INOUT</sapasi:ParameterType>
+<sapasi:MaxLength>1</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="1"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="ReferenceSpecificationsForBankDetails" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>BANK_REF</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>INOUT</sapasi:ParameterType>
+<sapasi:MaxLength>20</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="20"/>
+</restriction>
+</simpleType>
+</element>
+</sequence>
+</complexType>
+</schema>

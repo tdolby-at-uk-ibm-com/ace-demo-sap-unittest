@@ -1,0 +1,10 @@
+
+
+Importing file: /home/john/work/Websphere_Adapters/SAP_Improvements/workspaces/trfc/Z_ASYNCBAPI_1MessageSet/SapZAsyncbapi1.xsd
+
+Changing schema location for import statement "../sapcustomeraddress/SapCustomeraddress.mxsd".
+Changing schema location for import statement "../sapcustomercompanydetail/SapCustomercompanydetail.mxsd".
+Changing schema location for import statement "../sapcustomergeneraldetail/SapCustomergeneraldetail.mxsd".
+Changing schema location for import statement "../sapreturn/SapReturn.mxsd".
+Changing schema location for import statement "../sapcustomerbankdetail/SapCustomerbankdetail.mxsd".
+Changing schema location for import statement "null".

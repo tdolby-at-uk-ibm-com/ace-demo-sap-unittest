@@ -1,0 +1,20 @@
+DECLARE ns NAMESPACE 'http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/sapzasyncbapi1wrapper';
+
+
+CREATE COMPUTE MODULE Z_ASYNCBAPI_1Flow_LogErrorAbortAndWarning
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		CALL CopyEntireMessage();
+		IF InputRoot.DataObject.ns:SapZAsyncbapi1Wrapper.SapZAsyncbapi1.SapReturn.MessageTypeSSuccessEErrorWWarningIInfoAAbort = 'E' OR
+		   InputRoot.DataObject.ns:SapZAsyncbapi1Wrapper.SapZAsyncbapi1.SapReturn.MessageTypeSSuccessEErrorWWarningIInfoAAbort = 'A' THEN
+			PROPAGATE TO TERMINAL 'out1' FINALIZE NONE DELETE NONE;
+			RETURN FALSE;
+		END IF;
+		PROPAGATE TO TERMINAL 'out' FINALIZE NONE DELETE NONE;
+		RETURN FALSE;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+	END;
+END MODULE;

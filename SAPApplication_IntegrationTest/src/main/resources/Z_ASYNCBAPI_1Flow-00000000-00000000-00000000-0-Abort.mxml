@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><MessageAssembly iib:parser="GENERICROOT" xmlns:iib="http://com.ibm.iib/lt/1.0">
+   <version iib:valueType="INTEGER">1</version>
+   <checkpoint>
+      <messageId iib:valueType="CHARACTER">00000000-00000000-00000000</messageId>
+      <propagationCount iib:valueType="INTEGER">0</propagationCount>
+      <nodeCallDepth iib:valueType="INTEGER">0</nodeCallDepth>
+      <timestamp iib:valueType="TIMESTAMP">2021-05-04 10:01:05.419273</timestamp>
+      <source>
+         <name iib:valueType="CHARACTER">Z_ASYNCBAPI_1_Inbound_Operations</name>
+         <identifier iib:valueType="CHARACTER">Z_ASYNCBAPI_1Flow#FCMComposite_1_1</identifier>
+         <type iib:valueType="CHARACTER">ComIbmSAPInputNode</type>
+         <terminal iib:valueType="CHARACTER">out</terminal>
+         <nodePath>
+            <application iib:valueType="CHARACTER">default_DefaultApplication</application>
+            <messageFlow iib:valueType="CHARACTER">Z_ASYNCBAPI_1Flow</messageFlow>
+            <node iib:valueType="CHARACTER">Z_ASYNCBAPI_1_Inbound_Operations</node>
+         </nodePath>
+         <inputNode iib:valueType="BOOLEAN">TRUE</inputNode>
+      </source>
+      <target>
+         <name iib:valueType="CHARACTER">TRFC.Z_ASYNCBAPI_1.INBOUND.OUT</name>
+         <identifier iib:valueType="CHARACTER">Z_ASYNCBAPI_1Flow#FCMComposite_1_3</identifier>
+         <type iib:valueType="CHARACTER">ComIbmMQOutputNode</type>
+         <terminal iib:valueType="CHARACTER">in</terminal>
+         <nodePath>
+            <application iib:valueType="CHARACTER">default_DefaultApplication</application>
+            <messageFlow iib:valueType="CHARACTER">Z_ASYNCBAPI_1Flow</messageFlow>
+            <node iib:valueType="CHARACTER">TRFC.Z_ASYNCBAPI_1.INBOUND.OUT</node>
+         </nodePath>
+      </target>
+   </checkpoint>
+   <message iib:parser="GENERICROOT">
+      <Properties iib:parser="MQPROPERTYPARSER">
+         <MessageSet iib:valueType="CHARACTER">Z_ASYNCBAPI_1MessageSet</MessageSet>
+         <MessageType iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+         <MessageFormat iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+         <Transactional iib:valueType="BOOLEAN">TRUE</Transactional>
+      </Properties>
+      <DataObject iib:parser="xmlnsc">
+         <NS1:SapZAsyncbapi1Wrapper xmlns:NS1="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/sapzasyncbapi1wrapper" iib:prefix="false">
+            <SAPTransactionID iib:valueType="CHARACTER">09B4E681156060911B612F59</SAPTransactionID>
+            <SapZAsyncbapi1>
+               <SapCustomeraddress>
+                  <CustomerNumber1 iib:valueType="CHARACTER">0000000032</CustomerNumber1>
+                  <Name1 iib:valueType="CHARACTER">John Doe</Name1>
+                  <City iib:valueType="CHARACTER">Burlingame</City>
+                  <PostalCode iib:valueType="CHARACTER">94010</PostalCode>
+                  <RegionStateProvinceCounty iib:valueType="CHARACTER">CA</RegionStateProvinceCounty>
+                  <HouseNumberAndStreet iib:valueType="CHARACTER">Cornwallis Rd</HouseNumberAndStreet>
+                  <CountryKey iib:valueType="CHARACTER">US</CountryKey>
+                  <CountryIsoCode iib:valueType="CHARACTER">US</CountryIsoCode>
+                  <LanguageKey iib:valueType="CHARACTER">E</LanguageKey>
+                  <LanguageAccordingToIso639 iib:valueType="CHARACTER">EN</LanguageAccordingToIso639>
+                  <SortField iib:valueType="CHARACTER">DOE</SortField>
+                  <SearchTermForMatchcodeSearch iib:valueType="CHARACTER">JOHN DOE</SearchTermForMatchcodeSearch>
+                  <SearchTermForMatchcodeSearch1941080735 iib:valueType="CHARACTER">BURLINGAME</SearchTermForMatchcodeSearch1941080735>
+               </SapCustomeraddress>
+               <SapCustomercompanydetail/>
+               <SapCustomergeneraldetail>
+                  <CustomerNumber1 iib:valueType="CHARACTER">0000000032</CustomerNumber1>
+                  <Address iib:valueType="CHARACTER">0000022688</Address>
+                  <InternationalLocationNumberPart1 iib:valueType="CHARACTER">0000000</InternationalLocationNumberPart1>
+                  <InternationalLocationNumberPart2 iib:valueType="CHARACTER">00000</InternationalLocationNumberPart2>
+                  <CheckDigitForTheInternationalLocationNumber iib:valueType="CHARACTER">0</CheckDigitForTheInternationalLocationNumber>
+                  <DateOnWhichTheRecordWasCreated iib:valueType="DATE">2011-08-11</DateOnWhichTheRecordWasCreated>
+                  <NameOfPersonWhoCreatedTheObject iib:valueType="CHARACTER">JHOSIE</NameOfPersonWhoCreatedTheObject>
+                  <CustomerAccountGroup iib:valueType="CHARACTER">0001</CustomerAccountGroup>
+                  <CurrencyAmountInBapiInterfaces iib:valueType="DECIMAL">0.0000</CurrencyAmountInBapiInterfaces>
+                  <YearForWhichSalesAreGiven iib:valueType="CHARACTER">0000</YearForWhichSalesAreGiven>
+                  <YearlyNumberOfEmployees iib:valueType="CHARACTER">000000</YearlyNumberOfEmployees>
+                  <YearForWhichTheNumberOfEmployeesIsGiven iib:valueType="CHARACTER">0000</YearForWhichTheNumberOfEmployeesIsGiven>
+                  <CurrencyAmountInBapiInterfaces216334595 iib:valueType="DECIMAL">0.0000</CurrencyAmountInBapiInterfaces216334595>
+                  <StatusOfDataTransferIntoSubsequentRelease iib:valueType="CHARACTER">X</StatusOfDataTransferIntoSubsequentRelease>
+                  <AssignmentToHierarchy iib:valueType="CHARACTER">00</AssignmentToHierarchy>
+                  <IdForMainlyNonMilitaryUse iib:valueType="CHARACTER">X</IdForMainlyNonMilitaryUse>
+                  <TimeOfLastChangeConfirmation iib:valueType="CHARACTER">00:00:00</TimeOfLastChangeConfirmation>
+               </SapCustomergeneraldetail>
+               <SapReturn>
+                  <MessageTypeSSuccessEErrorWWarningIInfoAAbort iib:valueType="CHARACTER">A</MessageTypeSSuccessEErrorWWarningIInfoAAbort>
+                  <MessageClass iib:valueType="CHARACTER">FN</MessageClass>
+                  <MessageNumber iib:valueType="CHARACTER">505</MessageNumber>
+                  <MessageText iib:valueType="CHARACTER">Customer 0000000032 exists, but there is no bank data</MessageText>
+                  <ApplicationLogInternalMessageSerialNumber iib:valueType="CHARACTER">000000</ApplicationLogInternalMessageSerialNumber>
+                  <MessageVariable iib:valueType="CHARACTER">0000000032</MessageVariable>
+               </SapReturn>
+            </SapZAsyncbapi1>
+         </NS1:SapZAsyncbapi1Wrapper>
+      </DataObject>
+   </message>
+   <localEnvironment iib:parser="GENERICROOT">
+      <Destination>
+         <RouterList>
+            <DestinationList>
+               <LabelName iib:valueType="CHARACTER">emitCreateAfterImageSapZAsyncbapi1Wrapper</LabelName>
+            </DestinationList>
+         </RouterList>
+      </Destination>
+      <Adapter>
+         <MethodName iib:valueType="CHARACTER">emitCreateAfterImageSapZAsyncbapi1Wrapper</MethodName>
+         <Type iib:valueType="CHARACTER">SAP</Type>
+      </Adapter>
+   </localEnvironment>
+   <environment/>
+   <exceptionList/>
+</MessageAssembly>

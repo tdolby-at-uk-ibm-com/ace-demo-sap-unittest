@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata" xmlns:sapreturn="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/sapreturn" targetNamespace="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/sapreturn">
+<import namespace="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata"/>
+
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/j2ca/versionCompatability">
+<info:resourceAdapter xmlns:info="http://www.ibm.com/xmlns/prod/j2ca/versionCompatability" version="6.1"/>
+</appinfo>
+</annotation>
+
+<annotation xml:space="preserve">
+<appinfo source="commonj.connector.asi">
+<asi:annotationSet xmlns:asi="commonj.connector.asi" asiNSURI="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata"/>
+</appinfo>
+</annotation>
+<complexType name="SapReturn">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIBusinessObjectTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+</sapasi:sapBAPIBusinessObjectTypeMetadata>
+</appinfo>
+</annotation>
+<sequence maxOccurs="1" minOccurs="1">
+<element maxOccurs="1" minOccurs="0" name="MessageTypeSSuccessEErrorWWarningIInfoAAbort" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>TYPE</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>true</sapasi:PrimaryKey>
+<sapasi:ParameterType>IN</sapasi:ParameterType>
+<sapasi:MaxLength>1</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="1"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="MessageClass" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>ID</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>IN</sapasi:ParameterType>
+<sapasi:MaxLength>20</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="20"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="MessageNumber" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>NUMBER</sapasi:FieldName>
+<sapasi:FieldType>NUM</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>IN</sapasi:ParameterType>
+<sapasi:MaxLength>3</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="3"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="MessageText" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>MESSAGE</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>IN</sapasi:ParameterType>
+<sapasi:MaxLength>220</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="220"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="ApplicationLogLogNumber" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>LOG_NO</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>IN</sapasi:ParameterType>
+<sapasi:MaxLength>20</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="20"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="ApplicationLogInternalMessageSerialNumber" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>LOG_MSG_NO</sapasi:FieldName>
+<sapasi:FieldType>NUM</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>IN</sapasi:ParameterType>
+<sapasi:MaxLength>6</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="6"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="MessageVariable" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>MESSAGE_V1</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>IN</sapasi:ParameterType>
+<sapasi:MaxLength>50</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="50"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="MessageVariable1205598732" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>MESSAGE_V2</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>IN</sapasi:ParameterType>
+<sapasi:MaxLength>50</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="50"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="MessageVariable1205598731" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>MESSAGE_V3</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>IN</sapasi:ParameterType>
+<sapasi:MaxLength>50</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="50"/>
+</restriction>
+</simpleType>
+</element>
+<element maxOccurs="1" minOccurs="0" name="MessageVariable1205598730" nillable="true">
+<annotation xml:space="preserve">
+<appinfo source="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:sapBAPIPropertyTypeMetadata xmlns:sapasi="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/metadata">
+<sapasi:FieldName>MESSAGE_V4</sapasi:FieldName>
+<sapasi:FieldType>CHAR</sapasi:FieldType>
+<sapasi:PrimaryKey>false</sapasi:PrimaryKey>
+<sapasi:ParameterType>IN</sapasi:ParameterType>
+<sapasi:MaxLength>50</sapasi:MaxLength>
+</sapasi:sapBAPIPropertyTypeMetadata>
+</appinfo>
+</annotation>
+
+<simpleType>
+<restriction base="string">
+<maxLength value="50"/>
+</restriction>
+</simpleType>
+</element>
+</sequence>
+</complexType>
+</schema>
