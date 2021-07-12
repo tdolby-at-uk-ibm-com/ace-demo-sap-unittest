@@ -1,0 +1,58 @@
+Generating .xsdzip file for message set "Z_ASYNCBAPI_1MessageSet" 
+
+Generating schema for no XML Wire format
+Generating schema using the lax option
+
+
+Processing File : "/Z_ASYNCBAPI_1MessageSet/Z_ASYNCBAPI_1MessageSet/com/ibm/www/xmlns/prod/websphere/j2ca/sap/metadata/SapBusinessObjectMetadata.mxsd"
+
+
+
+Processing File : "/Z_ASYNCBAPI_1MessageSet/Z_ASYNCBAPI_1MessageSet/com/ibm/www/xmlns/prod/websphere/j2ca/sap/sapcustomeraddress/SapCustomeraddress.mxsd"
+
+
+
+Processing File : "/Z_ASYNCBAPI_1MessageSet/Z_ASYNCBAPI_1MessageSet/com/ibm/www/xmlns/prod/websphere/j2ca/sap/sapcustomerbankdetail/SapCustomerbankdetail.mxsd"
+
+
+
+Processing File : "/Z_ASYNCBAPI_1MessageSet/Z_ASYNCBAPI_1MessageSet/com/ibm/www/xmlns/prod/websphere/j2ca/sap/sapcustomercompanydetail/SapCustomercompanydetail.mxsd"
+
+
+
+Processing File : "/Z_ASYNCBAPI_1MessageSet/Z_ASYNCBAPI_1MessageSet/com/ibm/www/xmlns/prod/websphere/j2ca/sap/sapcustomergeneraldetail/SapCustomergeneraldetail.mxsd"
+
+
+
+Processing File : "/Z_ASYNCBAPI_1MessageSet/Z_ASYNCBAPI_1MessageSet/com/ibm/www/xmlns/prod/websphere/j2ca/sap/sapreturn/SapReturn.mxsd"
+
+
+
+Processing File : "/Z_ASYNCBAPI_1MessageSet/Z_ASYNCBAPI_1MessageSet/com/ibm/www/xmlns/prod/websphere/j2ca/sap/sapzasyncbapi1/SapZAsyncbapi1.mxsd"
+
+
+
+Processing File : "/Z_ASYNCBAPI_1MessageSet/Z_ASYNCBAPI_1MessageSet/com/ibm/www/xmlns/prod/websphere/j2ca/sap/sapzasyncbapi1wrapper/SapZAsyncbapi1Wrapper.mxsd"
+
+Saving File : "/Z_ASYNCBAPI_1MessageSet_tmp_1626102496124/.GeneratedSchemas/com/ibm/www/xmlns/prod/websphere/j2ca/sap/metadata/SapBusinessObjectMetadata.xsd" 
+
+Saving File : "/Z_ASYNCBAPI_1MessageSet_tmp_1626102496124/.GeneratedSchemas/com/ibm/www/xmlns/prod/websphere/j2ca/sap/sapcustomeraddress/SapCustomeraddress.xsd" 
+
+Saving File : "/Z_ASYNCBAPI_1MessageSet_tmp_1626102496124/.GeneratedSchemas/com/ibm/www/xmlns/prod/websphere/j2ca/sap/sapcustomerbankdetail/SapCustomerbankdetail.xsd" 
+
+Saving File : "/Z_ASYNCBAPI_1MessageSet_tmp_1626102496124/.GeneratedSchemas/com/ibm/www/xmlns/prod/websphere/j2ca/sap/sapcustomercompanydetail/SapCustomercompanydetail.xsd" 
+
+Saving File : "/Z_ASYNCBAPI_1MessageSet_tmp_1626102496124/.GeneratedSchemas/com/ibm/www/xmlns/prod/websphere/j2ca/sap/sapcustomergeneraldetail/SapCustomergeneraldetail.xsd" 
+
+Saving File : "/Z_ASYNCBAPI_1MessageSet_tmp_1626102496124/.GeneratedSchemas/com/ibm/www/xmlns/prod/websphere/j2ca/sap/sapreturn/SapReturn.xsd" 
+
+Saving File : "/Z_ASYNCBAPI_1MessageSet_tmp_1626102496124/.GeneratedSchemas/com/ibm/www/xmlns/prod/websphere/j2ca/sap/sapzasyncbapi1/SapZAsyncbapi1.xsd" 
+
+Saving File : "/Z_ASYNCBAPI_1MessageSet_tmp_1626102496124/.GeneratedSchemas/com/ibm/www/xmlns/prod/websphere/j2ca/sap/sapzasyncbapi1wrapper/SapZAsyncbapi1Wrapper.xsd" 
+
+Saving file "/Z_ASYNCBAPI_1MessageSet_tmp_1626102496124/.GeneratedSchemas/com/ibm/www/xmlns/prod/websphere/j2ca/sap/metadata/SapBusinessObjectMetadata.xsd" 
+
+Saving file "/Z_ASYNCBAPI_1MessageSet_tmp_1626102496124/.KeywordsFile/meta-inf/keywords.txt" 
+
+Saving file "/Z_ASYNCBAPI_1MessageSet/Z_ASYNCBAPI_1MessageSet/messageSet.mset" 
+
