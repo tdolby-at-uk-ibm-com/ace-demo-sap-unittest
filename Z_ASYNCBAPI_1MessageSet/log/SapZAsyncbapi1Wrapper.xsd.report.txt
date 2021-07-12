@@ -1,6 +1,0 @@
-
-
-Importing file: /home/john/work/Websphere_Adapters/SAP_Improvements/workspaces/trfc/Z_ASYNCBAPI_1MessageSet/SapZAsyncbapi1Wrapper.xsd
-
-Changing schema location for import statement "../sapzasyncbapi1/SapZAsyncbapi1.mxsd".
-Changing schema location for import statement "null".

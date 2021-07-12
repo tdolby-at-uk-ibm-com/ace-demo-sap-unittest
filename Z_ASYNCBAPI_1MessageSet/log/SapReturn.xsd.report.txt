@@ -1,5 +1,0 @@
-
-
-Importing file: /home/john/work/Websphere_Adapters/SAP_Improvements/workspaces/trfc/Z_ASYNCBAPI_1MessageSet/SapReturn.xsd
-
-Changing schema location for import statement "null".
