@@ -81,10 +81,11 @@ being available.
 
 To try this demo out using the ACE toolkit:
 
-1) Clone this repo using the ACE v12 toolkit Git perspective
-2) Right-click on "SAPApplication_UnitTest" and select "Run Test Project"; this should successfully run the JUnit tests.
+1) Clone this repo using the ACE v12 toolkit Git perspective, making sure to select the "Import all existing Eclipse projects after clone finishes" checkbox on the "Clone Git Repository" dialog page.
+2) From the Integration perspective, right-click on "SAPApplication_UnitTest" and select "Run Test Project"; this should successfully run the JUnit tests.
 3) Optionally, inspect the test source and recorded messages.
 
-The demo can also be run (on Linux) from the command line; after cloning the repo, run "mvn verify" to build and run 
-the tests using Maven.
+The demo can also be run (on Linux) from the command line; after cloning the repo, run "mvn verify" in a shell
+that has loaded mqsiprofile to build and run the tests using Maven. Note that the Mac toolkit will not run the
+tests successfully due to not having an IBM MQ product available.
 
