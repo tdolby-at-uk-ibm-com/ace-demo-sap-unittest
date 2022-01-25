@@ -3,7 +3,9 @@
 This repo contains artifacts that demonstrate the ability of App Connect Enterprise (ACE) 
 v12 to test flows using SAP Input nodes without needing an actual SAP system to be available. 
 The main prereq is the ACE v12 product, which can be downloaded from 
-[the IBM website](https://www.ibm.com/marketing/iwm/iwm/web/pickUrxNew.do?source=swg-wmbfd).
+[the IBM website](https://www.ibm.com/marketing/iwm/iwm/web/pickUrxNew.do?source=swg-wmbfd), and 
+the IBM MQ product, which is not used during testing but does need to be installed and can be
+downloaded from [the IBM MQ website](https://developer.ibm.com/articles/mq-downloads/).
 
 ## Background
 
@@ -30,9 +32,9 @@ to the "out" terminal and on to the TRFC.Z_ASYNCBAPI_1.INBOUND.OUT node.
 
 ![Message flow picture](images/SAP-flow.png)
 
-While the flow appears simple, it is complicated to test without using the ACE v12 test support code. The 
-original test flows, on which this application is based, used an actual SAP system to provide input to the 
-SAP Input node.
+While the flow appears simple, it is complicated to test without using the ACE v12 test support 
+code. The original test flows, on which this application is based, used an actual SAP system to 
+provide input to the SAP Input node.
 
 ## Messages used in the tests
 
@@ -85,7 +87,8 @@ To try this demo out using the ACE toolkit:
 2) From the Integration perspective, right-click on "SAPApplication_UnitTest" and select "Run Test Project"; this should successfully run the JUnit tests.
 3) Optionally, inspect the test source and recorded messages.
 
-The demo can also be run (on Linux) from the command line; after cloning the repo, run "mvn verify" in a shell
-that has loaded mqsiprofile to build and run the tests using Maven. Note that the Mac toolkit will not run the
-tests successfully due to not having an IBM MQ product available.
+The demo can also be run (on Linux) from the command line using Maven; after cloning the repo, run "mvn verify"
+in a shell that has loaded mqsiprofile to build and run the tests using Maven. Note that the Mac toolkit will 
+not run the tests successfully due to not having an IBM MQ product available.
 
+For non-Maven users, the scripts build-and-ut.sh (Linux) and .cmd (Windows) can be used to build and run the projects.
