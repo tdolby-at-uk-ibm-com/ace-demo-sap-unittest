@@ -75,6 +75,8 @@ jobs:
           ########################################################################
           export LICENSE=accept
           export MQSI_WORKPATH=$PWD/ace-minimal-image-unzip/var/mqsi
+          export MQSI_MQ_INSTALL_PATH_OVERRIDE=$PWD/ace-minimal-image-unzip/opt/mqm
+          
           . ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/mqsiprofile
 
           ########################################################################
