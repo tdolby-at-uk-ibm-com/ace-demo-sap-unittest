@@ -88,6 +88,6 @@ jobs:
           echo "Running build/package"
           ibmint deploy --input-path . --output-work-directory /tmp/ace-demo-sap-work-dir --project SAPApplication --project SAPApplication_UnitTest
           echo "Optimizing startup"
-          ibmint optimize server --work-dir /tmp/gradle-test-work-dir --disable NodeJS
+          ibmint optimize server --work-dir /tmp/ace-demo-sap-work-dir --disable NodeJS
           echo "Running tests"
           IntegrationServer -w /tmp/ace-demo-sap-work-dir --mq-queue-manager-name dummy --start-msgflows false --no-nodejs --admin-rest-api -1 --test-project SAPApplication_UnitTest
