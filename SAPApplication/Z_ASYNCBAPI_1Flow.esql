@@ -4,7 +4,7 @@ CREATE COMPUTE MODULE Z_ASYNCBAPI_1Flow_CopyExceptionList
 	CREATE FUNCTION Main() RETURNS BOOLEAN
 	BEGIN
 		CALL CopyMessageHeaders();
-		-- CALL CopyEntireMessage();
+		-- CALL CopyEntireMessage(); 
 		
 		SET OutputRoot.XMLNSC.FailureData = 'FailureData';
 		SET OutputRoot.XMLNSC.FailureData.ExceptionList	= InputExceptionList;
