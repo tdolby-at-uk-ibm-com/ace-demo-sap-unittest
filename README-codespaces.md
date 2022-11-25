@@ -6,6 +6,7 @@ which vscode runs is configurable, and this repo uses a container with ACE insta
 
 Individual developers get sixty hours of container runtime for free (at the time of
 writing), and a codespace can be launched from the "Code" menu:
+
 ![Codespaces launch](/.devcontainer/codespaces-launch.png)
 
 ## Building and testing
@@ -13,7 +14,7 @@ writing), and a codespace can be launched from the "Code" menu:
 The container will start up once the image has been downloaded (usually 30-50 seconds)
 and vscode will start automatically. All of the usual ACE commands are present, servers
 can be started as usual, etc. For this repo, Maven can be used to build and test the
-application and library in the terminal window:
+application in the terminal window:
 ```
 mvn --no-transfer-progress verify
 ```
@@ -32,7 +33,7 @@ For ESQL or Java coding, unit testing, or fixing CI build breaks, codespaces pro
 easy-to-start environment that removes the need to install the product locally while still
 allowing building and testing with the actual product.
 
-##  Codespace devcontainer
+## Codespace devcontainer
 
 Codespaces for this repo use the [ace MQ client devcontainer](https://github.com/trevor-dolby-at-ibm-com/ace-docker/tree/main/experimental/devcontainers)
 which is built on the standard Ubuntu devcontainer with ACE, MQ client, and Maven installed. The
