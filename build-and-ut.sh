@@ -16,5 +16,8 @@ mqsicreateworkdir /tmp/ace-demo-sap-work-dir
 # ibmint new for v12
 ibmint deploy --input-path . --output-work-directory /tmp/ace-demo-sap-work-dir --project SAPApplication --project SAPApplication_UnitTest
 
+# ibmint optimize server new for v12.0.4
+ibmint optimize server --work-directory /tmp/ace-demo-sap-work-dir
+
 # Run the server to run the tests
 IntegrationServer -w /tmp/ace-demo-sap-work-dir --mq-queue-manager-name dummy --start-msgflows false --no-nodejs --admin-rest-api -1 --test-project SAPApplication_UnitTest

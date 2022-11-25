@@ -1,0 +1,10 @@
+{
+    "name": "ace-demo-sap-unittest-devcontainer",
+    "image": "tdolby/experimental:ace-devcontainer-mqclient-initial",
+    "containerEnv": {
+        "LICENSE": "accept"
+    },
+    "remoteEnv": {
+        "REMOTE_LICENSE": "accept"
+    }
+}
