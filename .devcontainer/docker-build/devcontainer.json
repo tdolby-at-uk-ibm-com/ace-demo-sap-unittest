@@ -1,6 +1,6 @@
 {
     "name": "ace-demo-sap-unittest-devcontainer-dockerbuild",
-    "build": { "dockerfile": "Dockerfile" },
+    "build": { "dockerfile": "Dockerfile.mqclient" },
     "containerEnv": {
         "LICENSE": "accept"
     },
