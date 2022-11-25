@@ -10,14 +10,16 @@ writing), and a codespace can be launched from the "Code" menu:
 
 ## Building and testing
 
-The container will start up once the image has been downloaded (usually 20-40 seconds)
+The container will start up once the image has been downloaded (usually 30-50 seconds)
 and vscode will start automatically. All of the usual ACE commands are present, servers
 can be started as usual, etc. For this repo, Maven can be used to build and test the
 application and library in the terminal window:
 ```
-mvn --no-transfer-progress -Dinstall.work.directory=/tmp/maven-output/ace-server verify
+mvn --no-transfer-progress verify
 ```
 The first Maven run will download lots of plugins, and subsequent runs will be faster.
+
+The `build-and-ut.sh` script also works, and does not require Maven.
 
 ## Use cases
 
@@ -32,6 +34,7 @@ allowing building and testing with the actual product.
 
 ##  Codespace devcontainer
 
-Codespaces for this repo use the [ace-minimal devcontainer](https://github.com/trevor-dolby-at-ibm-com/ace-docker/tree/main/experimental/devcontainers)
-which is built on the standard Ubuntu devcontainer with ACE and Maven installed. The container
-is pre-built for faster startup, but could also be run as a docker build during codespace startup.
+Codespaces for this repo use the [ace MQ client devcontainer](https://github.com/trevor-dolby-at-ibm-com/ace-docker/tree/main/experimental/devcontainers)
+which is built on the standard Ubuntu devcontainer with ACE, MQ client, and Maven installed. The
+container is pre-built for faster startup, but can also be run as a docker build during codespace 
+startup via "New with options" on the codespaces panel.
