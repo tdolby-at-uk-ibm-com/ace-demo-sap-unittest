@@ -4,12 +4,13 @@ MAINTAINER Trevor Dolby <trevor.dolby@ibm.com> (@trevor-dolby-at-ibm-com)
 
 # Build:
 #
-# docker build -t ace-devcontainer:12.0.4.0 -f Dockerfile .
+# docker build -t ace-devcontainer-mqclient:12.0.4.0 -f Dockerfile.mqclient .
 
 ARG USERNAME
 ARG PASSWORD
 ARG DOWNLOAD_URL=http://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/integration/12.0.4.0-ACE-LINUX64-DEVELOPER.tar.gz
 ARG PRODUCT_LABEL=ace-12.0.4.0
+ARG MQ_DOWNLOAD_URL=http://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/messaging/mqdev/redist/9.3.1.0-IBM-MQC-Redist-LinuxX64.tar.gz
 
 # Prevent errors about having no terminal when using apt-get
 ENV DEBIAN_FRONTEND noninteractive
@@ -42,6 +43,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends curl zip binuti
 # Source profile automatically
 RUN usermod -a -G mqbrkrs vscode \
   && echo ". /opt/ibm/ace-12/server/bin/mqsiprofile" >> /home/vscode/.bashrc
+
+# Install MQ client libraries
+RUN mkdir /opt/mqm && curl ${MQ_DOWNLOAD_URL} | tar zx --exclude=tools --directory /opt/mqm
 
 # Install Maven for development use.
 #
