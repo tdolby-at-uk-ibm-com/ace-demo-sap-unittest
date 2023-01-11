@@ -11,6 +11,9 @@ components:
     type: dockerimage
     image: 'tdolby/experimental:ace-dev-spaces-container-12.0.7.0'
     memoryLimit: 2048Mi
+    env:
+      - name: LICENSE
+        value: accept
     endpoints:
       - name: server
         port: 7600
