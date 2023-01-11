@@ -1,19 +1,19 @@
 apiVersion: 1.0.0
 metadata:
-  name: localnews-frontend
+  name: ace-demo-sap-unittest
 projects:
-  - name: localnews
+  - name: ace-demo-sap-unittest
     source:
       type: git
-      location: 'https://github.com/Apress/Kubernetes-Native-Development'
+      location: 'https://github.com/trevor-dolby-at-ibm-com/ace-demo-sap-unittest'
 components:
-  -  alias: nodejs
+  -  alias: ace-v12
      type: dockerimage
-     image: 'registry.redhat.io/devspaces/udi-rhel8@sha256:1983e5…'
+     image: 'tdolby/experimental:ace-dev-spaces-container-12.0.7.0'
     memoryLimit: 2048Mi
     endpoints:
-      - name: news-frontend
-        port: 4200
+      - name: server
+        port: 7600
         attributes:
           discoverable: 'true'
           public: 'true'
