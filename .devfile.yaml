@@ -18,7 +18,7 @@ components:
       - name: server
         port: 7600
         attributes:
-          discoverable: true
-          public: true
+          discoverable: 'true'
+          public: 'true'
           protocol: 'http'
     mountSources: true
