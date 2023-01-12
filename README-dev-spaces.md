@@ -15,7 +15,7 @@ good way to ensure the operator is working as expected:
 ![Empty Workspace](/images/dev-spaces-empty-workspace.png)
 
 Once that has succeeded, it should be deleted and a new ACE workspace created by pasting
-the URL of this repo (`https://github.com/trevor-dolby-at-ibm-com/ace-demo-sap-unittest`)
+the URL of this repo (`https://github.com/tdolby-at-uk-ibm-com/ace-demo-sap-unittest`)
 into the `Git Repo URL` field of the the `Create Workspace` page:
 
 ![git URL](/images/dev-spaces-create-workspace.png)
