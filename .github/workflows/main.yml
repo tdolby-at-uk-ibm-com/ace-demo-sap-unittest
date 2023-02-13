@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
 
     container:
-      image: tdolby/experimental:ace-basic-mqclient-12.0.4.0
+      image: tdolby/experimental:ace-ut-demo
       env:
         LICENSE: accept
 
