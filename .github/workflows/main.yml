@@ -37,4 +37,5 @@ jobs:
           # 
           ########################################################################
           echo test
+          bash -c ". /opt/ibm/ace-12/server/bin/mqsiprofile && ./build-and-ut.sh"
           
