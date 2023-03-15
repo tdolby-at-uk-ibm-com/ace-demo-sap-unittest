@@ -21,20 +21,29 @@ jobs:
     runs-on: ubuntu-latest
 
     container:
-      image: tdolby/experimental:ace-devcontainer-mqclient-12.0.4.0
+      image: tdolby/experimental:ace-devcontainer-mqclient-12.0.7.0
       env:
         LICENSE: accept
 
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       # Runs a set of commands using the runners shell
       - name: Build/UT for ACE projects
+        shell: bash
         run: |
-          ########################################################################
-          # 
-          # Run tests in an ACE environment
-          # 
-          ########################################################################
-          bash -c ". /opt/ibm/ace-12/server/bin/mqsiprofile && ./build-and-ut.sh"
+          # Build and test in ACE env
           
+          ########################################################################
+          # 
+          # ACE environment setup
+          # 
+          ########################################################################
+          . /opt/ibm/ace-12/server/bin/mqsiprofile
+          
+          ########################################################################
+          # 
+          # Run tests 
+          # 
+          ########################################################################
+          ./build-and-ut.sh
