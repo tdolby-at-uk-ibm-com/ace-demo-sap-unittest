@@ -1,6 +1,6 @@
 {
     "name": "ace-demo-sap-unittest-devcontainer",
-    "image": "tdolby/experimental:ace-devcontainer-mqclient-12.0.8",
+    "image": "tdolby/experimental:ace-devcontainer-mqclient-12.0.8.0",
     "containerEnv": {
         "LICENSE": "accept"
     },
