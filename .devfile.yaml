@@ -11,6 +11,7 @@ components:
     container:
       image: 'tdolby/experimental:ace-dev-spaces-container-xvnc-12.0.8.0'
       memoryLimit: 2048Mi
+      cpuLimit: 1000m
       env:
         - name: LICENSE
           value: accept
