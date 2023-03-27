@@ -11,17 +11,10 @@ projects:
 components:
   - name: ace-v12
     container:
-      image: 'tdolby/experimental:ace-dev-spaces-container-xvnc-12.0.8.0'
+      image: 'tdolby/experimental:ace-dev-spaces-container-12.0.8.0'
       memoryLimit: 2048Mi
       cpuLimit: 1000m
       env:
         - name: LICENSE
           value: accept
-      endpoints:
-        - name: server
-          targetPort: 7600
-          attributes:
-            discoverable: 'true'
-            public: 'true'
-            protocol: 'http'
       mountSources: true
