@@ -3,9 +3,8 @@ metadata:
   name: ace-demo-sap-unittest
 projects:
   - name: ace-demo-sap-unittest
-    source:
-      type: git
-      location: 'https://github.com/tdolby-at-uk-ibm-com/ace-demo-sap-unittest'
+    git:
+      location:  'https://github.com/tdolby-at-uk-ibm-com/ace-demo-sap-unittest'
 components:
   - name: ace-v12
     container:
@@ -17,7 +16,7 @@ components:
           value: accept
       endpoints:
         - name: server
-          port: 7600
+          targetPort: 7600
           attributes:
             discoverable: 'true'
             public: 'true'
