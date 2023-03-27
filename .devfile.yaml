@@ -4,7 +4,10 @@ metadata:
 projects:
   - name: ace-demo-sap-unittest
     git:
-      location:  'https://github.com/tdolby-at-uk-ibm-com/ace-demo-sap-unittest'
+      remotes:
+        origin: 'https://github.com/tdolby-at-uk-ibm-com/ace-demo-sap-unittest.git'
+      checkoutFrom:
+        revision: main
 components:
   - name: ace-v12
     container:
