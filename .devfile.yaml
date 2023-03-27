@@ -24,4 +24,10 @@ components:
             discoverable: 'true'
             public: 'true'
             protocol: 'http'
+        - name: novnc
+          targetPort: 6080
+          attributes:
+            discoverable: 'true'
+            public: 'true'
+            protocol: 'http'
       mountSources: true
