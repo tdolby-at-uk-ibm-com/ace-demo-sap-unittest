@@ -1,24 +1,27 @@
-apiVersion: 1.0.0
+schemaVersion: 2.2.0
 metadata:
   name: ace-demo-sap-unittest
 projects:
   - name: ace-demo-sap-unittest
-    source:
-      type: git
-      location: 'https://github.com/tdolby-at-uk-ibm-com/ace-demo-sap-unittest'
+    git:
+      remotes:
+        origin: 'https://github.com/tdolby-at-uk-ibm-com/ace-demo-sap-unittest'
+      checkoutFrom:
+        revision: main
 components:
-  - alias: ace-v12
-    type: dockerimage
-    image: 'tdolby/experimental:ace-dev-spaces-container-12.0.4.0'
-    memoryLimit: 2048Mi
-    env:
-      - name: LICENSE
-        value: accept
-    endpoints:
-      - name: server
-        port: 7600
-        attributes:
-          discoverable: 'true'
-          public: 'true'
-          protocol: 'http'
-    mountSources: true
+  - name: ace-v12
+    container:
+      image: 'tdolby/experimental:ace-dev-spaces-container-12.0.8.0'
+      memoryLimit: 2048Mi
+      cpuLimit: 1000m
+      env:
+        - name: LICENSE
+          value: accept
+      endpoints:
+        - name: server
+          targetPort: 7600
+          attributes:
+            discoverable: 'true'
+            public: 'true'
+            protocol: 'http'
+      mountSources: true
