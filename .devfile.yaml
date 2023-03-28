@@ -5,7 +5,7 @@ projects:
   - name: ace-demo-sap-unittest
     git:
       remotes:
-        origin: 'https://github.com/tdolby-at-uk-ibm-com/ace-demo-sap-unittest'
+        origin: 'https://github.com/tdolby-at-uk-ibm-com/ace-demo-sap-unittest.git'
       checkoutFrom:
         revision: main
 components:
@@ -17,11 +17,4 @@ components:
       env:
         - name: LICENSE
           value: accept
-      endpoints:
-        - name: server
-          targetPort: 7600
-          attributes:
-            discoverable: 'true'
-            public: 'true'
-            protocol: 'http'
       mountSources: true
