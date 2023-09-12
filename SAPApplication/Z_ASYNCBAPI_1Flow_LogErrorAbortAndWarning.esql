@@ -5,8 +5,8 @@ CREATE COMPUTE MODULE Z_ASYNCBAPI_1Flow_LogErrorAbortAndWarning
 	CREATE FUNCTION Main() RETURNS BOOLEAN
 	BEGIN
 		CALL CopyEntireMessage();
-		IF InputRoot.DataObject.ns:SapZAsyncbapi1Wrapper.SapZAsyncbapi1.SapReturn.MessageTypeSSuccessEErrorWWarningIInfoAAbort = 'R' OR
-		   InputRoot.DataObject.ns:SapZAsyncbapi1Wrapper.SapZAsyncbapi1.SapReturn.MessageTypeSSuccessEErrorWWarningIInfoAAbort = 'G' THEN
+		IF InputRoot.DataObject.ns:SapZAsyncbapi1Wrapper.SapZAsyncbapi1.SapReturn.MessageTypeSSuccessEErrorWWarningIInfoAAbort = 'BLAHBLAHBLAH' OR
+		   InputRoot.DataObject.ns:SapZAsyncbapi1Wrapper.SapZAsyncbapi1.SapReturn.MessageTypeSSuccessEErrorWWarningIInfoAAbort = 'QQQQQ' THEN
 			PROPAGATE TO TERMINAL 'out1' FINALIZE NONE DELETE NONE;
 			RETURN FALSE;
 		END IF;
